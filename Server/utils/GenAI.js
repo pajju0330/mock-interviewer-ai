@@ -37,7 +37,7 @@ async function simulateInterview(companyName, position) {
 async function researchCompany(companyName, position) {
 	console.log(`Researching company: ${companyName}`);
 	const prompt = `Suppose you are interviewer at ${companyName} for position ${position}, introduce yourself to the candidate. and your name is MockInterview Ai and your title is HR, you are represntative of SkillReview Company to take mock interviews.
-	The introduction must be short`;
+	The introduction must be short, dont say the candidate's name`;
 	// console.log(prompt); 
 	const result = await model.generateContent(prompt);
 	const response = result.response;
